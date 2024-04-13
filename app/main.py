@@ -21,11 +21,6 @@ app = FastAPI(
 )
 
 
-@app.get("/")
-def read_root():
-    return {"Hello": "World"}
-
-
 @app.get("/v1/fixtures/")
 def get_fixture():
     return fixtures
