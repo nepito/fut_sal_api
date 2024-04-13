@@ -13,7 +13,7 @@ app = FastAPI(
     },
     license_info={
         "name": "AGPL-3.0 license",
-        "url": "https://github.com/niesfutbol/api_nies/blob/develop/LICENSE",
+        "url": "https://github.com/niesfutbol/fut_sal_api/blob/develop/LICENSE",
     },
 )
 
