@@ -20,14 +20,6 @@ jobs:
       with:
         files: ./coverage.xml
         verbose: true
-    - name: Evalúa resistencia a mutaciones
-      run: docker run --volume $PWD:/workdir --volume $PWD/tests/data:/workdir/data nepolin/fut_sal_api:latest make mutants
-    - name: Create/Update tag
-      uses: rickstaa/action-create-tag@v1.5.4
-      with:
-        tag: "latest"
-        message: "Latest release"
-        force_push_tag: true
     - name: Docker log-in
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
@@ -37,6 +29,8 @@ jobs:
       run: docker push nepolin/fut_sal_api:latest
     - name: Sube sha a Docker Hub
       run: docker push nepolin/fut_sal_api:${GITHUB_SHA:0:4}
+    - name: Evalúa resistencia a mutaciones
+      run: docker run --volume $PWD:/workdir --volume $PWD/tests/data:/workdir/data nepolin/fut_sal_api:latest make mutants
   build-n-publish:
     name: Build and publish Python 🐍 distributions 📦 to PyPI
     runs-on: ubuntu-latest
