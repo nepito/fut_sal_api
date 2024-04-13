@@ -1,6 +1,9 @@
+import json
 from fastapi import FastAPI
 
 
+f = open("./data/fixtures.json")
+fixtures = json.load(f)
 app = FastAPI(
     title="API of NIES",
     description="API made by NIES",
@@ -21,3 +24,8 @@ app = FastAPI(
 @app.get("/")
 def read_root():
     return {"Hello": "World"}
+
+
+@app.get("/v1/fixtures/")
+def get_fixture():
+    return fixtures
