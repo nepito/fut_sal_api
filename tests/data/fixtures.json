@@ -120,7 +120,7 @@
 				"away": {
 					"id": 40,
 					"name": "Troncos FC",
-					"logo": "https://media-4.api-sports.io/football/teams/40.png",
+					"logo": "https://raw.githubusercontent.com/nepito/fut_sal_front/develop/static/troncos_fc.png",
 					"winner": true
 				}
 			},
@@ -386,7 +386,7 @@
 				"home": {
 					"id": 34,
 					"name": "Troncos FC",
-					"logo": "https://media-4.api-sports.io/football/teams/34.png",
+					"logo": "https://raw.githubusercontent.com/nepito/fut_sal_front/develop/static/troncos_fc.png",
 					"winner": false
 				},
 				"away": {
