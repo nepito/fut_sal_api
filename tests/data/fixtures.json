@@ -45,7 +45,7 @@
 			"teams": {
 				"home": {
 					"id": 1,
-					"name": "Alex FC",
+					"name": "Vaqueros FC",
 					"logo": "https://raw.githubusercontent.com/nepito/fut_sal_front/develop/static/alex_fc.png",
 					"winner": false
 				},
@@ -317,7 +317,7 @@
 			"teams": {
 				"home": {
 					"id": 46,
-					"name": "Alex FC",
+					"name": "Vaqueros FC",
 					"logo": "https://raw.githubusercontent.com/nepito/fut_sal_front/develop/static/alex_fc.png",
 					"winner": false
 				},
@@ -521,20 +521,20 @@
 			"teams": {
 				"home": {
 					"id": 45,
-					"name": "Everton",
-					"logo": "https://media-4.api-sports.io/football/teams/45.png",
-					"winner": false
+					"name": "Kingstone",
+					"logo": "https://raw.githubusercontent.com/nepito/fut_sal_front/develop/static/kingstone.png",
+					"winner": true
 				},
 				"away": {
 					"id": 49,
-					"name": "Chelsea",
-					"logo": "https://media-4.api-sports.io/football/teams/49.png",
-					"winner": true
+					"name": "Mesebrios",
+					"logo": "https://raw.githubusercontent.com/nepito/fut_sal_front/develop/static/meserios.png",
+					"winner": false
 				}
 			},
 			"goals": {
-				"home": 0,
-				"away": 1
+				"home": 9,
+				"away": 7
 			},
 			"score": {
 				"halftime": {
