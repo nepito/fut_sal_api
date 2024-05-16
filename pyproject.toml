@@ -12,5 +12,6 @@ module = "app"
 requires = [
 	"fastapi",
 	"httpx",
+	"openai",
 ]
 requires-python=">=3.9"
